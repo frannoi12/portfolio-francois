@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>François Toyi — Développeur Full-Stack / Backend</title>
+<meta name="description" content="Portfolio de François Toyi, développeur full-stack orienté backend — Laravel, Django, GraphQL, React Native, Flutter, PostgreSQL.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#accueil" class="logo">François Toyi</a>
+    <div class="nav-group">
+      <nav class="nav">
+        <a href="#profil">Profil</a>
+        <a href="#experience">Expérience</a>
+        <a href="#projets">Projets</a>
+        <a href="#competences">Compétences</a>
+        <a href="#formation">Formation</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Basculer le thème clair / sombre">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12h2.6M18.9 12h2.6M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.6 6.6 0 0 0 10.5 10.5Z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section id="accueil" class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">Développeur Full-Stack orienté Backend</p>
+        <h1>François Toyi</h1>
+        <p class="hero-lede">
+          Je conçois et développe des applications web et mobiles de bout en bout —
+          API REST et GraphQL, bases de données, interfaces — avec Laravel, Django,
+          React Native et Flutter, en Docker et en CI/CD.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Me contacter</a>
+          <a href="assets/CV-Francois-Toyi.pdf" download class="btn btn-ghost">Télécharger mon CV</a>
+        </div>
+        <ul class="hero-meta">
+          <li>Sokodé, Togo</li>
+          <li>francoistoyi4@gmail.com</li>
+          <li>github.com/frannoi12</li>
+        </ul>
+      </div>
+
+      <div class="hero-photo">
+        <div class="avatar" id="avatar">
+          <img src="assets/photo.jpg" alt="Photo de François Toyi" id="avatar-img">
+          <span class="avatar-fallback" id="avatar-fallback">François<br>Toyi</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFIL -->
+  <section id="profil" class="section profil">
+    <div class="wrap profil-inner">
+      <p class="eyebrow">Profil</p>
+      <p class="profil-text">
+        Développeur full-stack orienté backend, stagiaire chez Digital Hub Togo et
+        l'        ONG ESPOIR PLUS. J'ai conçu et mis en production des plateformes de
+        gestion, des API REST et GraphQL et des applications mobiles
+        multiplateformes.
+        Autonome, rigoureux, j'apprends vite une nouvelle technologie dans sa
+        documentation officielle et je m'appuie sur l'IA comme accélérateur pour
+        prototyper des MVP, analyser des bugs et écrire des tests.
+      </p>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="wrap">
+      <p class="eyebrow">Expérience professionnelle</p>
+
+      <article class="timeline-item">
+        <div class="timeline-date">2025 — 2026</div>
+        <div class="timeline-content">
+          <h3>Développeur Web Full-Stack <span>· Stagiaire</span></h3>
+          <p class="timeline-org">Digital Hub Togo — Sokodé, Togo</p>
+          <ul>
+            <li>Participation à la conception et au développement de <strong>BANDJELI</strong>, une plateforme e-learning multi-tenant avec personnalisation des parcours pédagogiques et intégration de l'intelligence artificielle.</li>
+            <li>Développement des API REST et de la logique métier avec Python, Django et Django REST Framework.</li>
+            <li>Conception des modèles de données et gestion des données avec PostgreSQL.</li>
+            <li>Développement des interfaces avec React.js, TypeScript et Tailwind CSS, avec intégration et personnalisation des composants Shadcn/UI.</li>
+            <li>Gestion des échanges front/back avec Redux Toolkit et RTK Query, validation via Zod et serializers personnalisés.</li>
+            <li>Conteneurisation avec Docker et mise en place de workflows GitHub Actions pour automatiser les tests.</li>
+          </ul>
+          <div class="tags">
+            <span>Python</span><span>Django</span><span>DRF</span><span>React.js</span><span>TypeScript</span><span>PostgreSQL</span><span>Docker</span><span>GitHub Actions</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-date">2023 — 2025</div>
+        <div class="timeline-content">
+          <h3>Développeur Web <span>· Stagiaire</span></h3>
+          <p class="timeline-org">ONG ESPOIR PLUS — Sokodé, Togo</p>
+          <ul>
+            <li>Analyse des besoins et des données de la structure en vue de la conception d'une plateforme numérique de gestion de la collecte des déchets.</li>
+            <li>Modélisation UML avec Modelio : diagramme de cas d'utilisation et diagramme de classes.</li>
+            <li>Développement de la plateforme avec Laravel, puis finalisation du projet en deuxième année pour livrer une première version fonctionnelle utilisable par la structure.</li>
+            <li>Conception et implémentation d'une base de données relationnelle PostgreSQL (ménages, clients, abonnements, zones de collecte).</li>
+            <li>Intégration du paiement en ligne des abonnements et mise en place des notifications d'échéances.</li>
+            <li>Développement du module de suivi des agents de terrain et de leurs itinéraires de collecte.</li>
+          </ul>
+          <div class="tags">
+            <span>Laravel</span><span>PHP</span><span>PostgreSQL</span><span>API REST</span><span>Modelio</span><span>UML</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section id="projets" class="section projets">
+    <div class="wrap">
+      <p class="eyebrow">Projets principaux</p>
+      <div class="project-grid project-grid-2">
+
+        <article class="project-card project-card-featured">
+          <h3>BANDJELI — Plateforme SaaS e-learning multi-tenant</h3>
+          <p>Architecture multi-tenant pour gérer plusieurs centres de formation, leurs utilisateurs, leurs contenus et la progression des apprenants.</p>
+          <ul>
+            <li>API REST avec Django REST Framework : utilisateurs, formations, contenus, progressions.</li>
+            <li>Interfaces réactives React.js, TypeScript, Tailwind CSS et composants Shadcn/UI personnalisés.</li>
+            <li>États et échanges API gérés par Redux Toolkit et RTK Query, validation avec Zod.</li>
+            <li>Données PostgreSQL, conteneurisation Docker et tests automatisés via GitHub Actions.</li>
+          </ul>
+          <div class="tags">
+            <span>Django</span><span>DRF</span><span>React.js</span><span>TypeScript</span><span>PostgreSQL</span><span>Docker</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>EPHAB Togo — Application web institutionnelle</h3>
+          <p>Site de l'École des Personnes Handicapées Auditives (BETHEL) de Sokodé : backend API Laravel, frontend Next.js, données PostgreSQL.</p>
+          <ul>
+            <li>Backend conteneurisé avec Docker et déployé sur Railway.</li>
+            <li>Frontend Next.js déployé sur Vercel, échanges configurés via API REST.</li>
+          </ul>
+          <div class="tags">
+            <span>Laravel</span><span>Next.js</span><span>PostgreSQL</span><span>Docker</span><span>Railway</span><span>Vercel</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Gestion de collecte des déchets — ONG ESPOIR PLUS</h3>
+          <p>Plateforme de gestion des abonnements et du suivi des ménages pour la collecte des déchets à Sokodé.</p>
+          <ul>
+            <li>Modélisation UML (Modelio) puis implémentation progressive en Laravel.</li>
+            <li>Base de données centralisée PostgreSQL : clients, ménages, abonnements, zones de collecte.</li>
+            <li>Paiement en ligne des abonnements, notifications d'échéances et suivi des agents de terrain.</li>
+          </ul>
+          <div class="tags">
+            <span>Laravel</span><span>PostgreSQL</span><span>API REST</span><span>UML</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Application mobile de gestion de contacts</h3>
+          <p>Backend GraphQL et application mobile multiplateforme pour créer, rechercher, filtrer et mettre à jour des contacts.</p>
+          <ul>
+            <li>API GraphQL conçue pour des requêtes et mutations fluides et optimisées.</li>
+            <li>Réduction des échanges réseau par sélection précise des champs demandés.</li>
+          </ul>
+          <div class="tags">
+            <span>GraphQL</span><span>React Native</span><span>API REST</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Application mobile de génération de plannings</h3>
+          <p>Génération automatique de plannings hebdomadaires pour n'importe quel mois de l'année.</p>
+          <ul>
+            <li>Logique métier de calcul dynamique des dates et de gestion des créneaux récurrents.</li>
+            <li>Prévention des conflits d'emplois du temps et interface fluide adaptée à l'usage mobile.</li>
+          </ul>
+          <div class="tags">
+            <span>Flutter</span><span>Dart</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS ACADEMIQUES -->
+  <section id="projets-academiques" class="section projets">
+    <div class="wrap">
+      <p class="eyebrow">Projets académiques</p>
+      <div class="project-grid project-grid-2">
+
+        <article class="project-card">
+          <h3>Gestion de pharmacie</h3>
+          <p>Gestion du personnel, des produits et du stock : entrées/sorties, achats et ventes. Application console puis interface graphique Tkinter, accès PostgreSQL via psycopg2.</p>
+          <div class="tags">
+            <span>Python</span><span>PostgreSQL</span><span>psycopg2</span><span>Tkinter</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Gestion d'école</h3>
+          <p>Application de gestion scolaire en programmation orientée objet, avec interface graphique Java Swing.</p>
+          <div class="tags">
+            <span>Java SE</span><span>Java Swing</span><span>JDBC</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Gestion de tâches</h3>
+          <p>Application de gestion de tâches avec accès aux données via JDBC, mise en pratique des Servlets, contrôleurs et du développement web avec Spring Boot.</p>
+          <div class="tags">
+            <span>Java</span><span>JDBC</span><span>Servlets</span><span>Spring Boot</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Projets d'automatisation électronique</h3>
+          <p>Prototypes d'une porte automatique et d'une poubelle automatique déclenchées par détection de proximité.</p>
+          <div class="tags">
+            <span>Électronique</span><span>Automatisation</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPETENCES -->
+  <section id="competences" class="section competences">
+    <div class="wrap">
+      <p class="eyebrow">Compétences techniques</p>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4>Backend</h4>
+          <div class="tags"><span>PHP</span><span>Laravel</span><span>Python</span><span>Django</span><span>DRF</span><span>Node.js</span><span>Express.js</span><span>GraphQL</span><span>JWT</span><span>OAuth 2.0</span></div>
+        </div>
+        <div class="skill-group">
+          <h4>Frontend &amp; Mobile</h4>
+          <div class="tags"><span>React.js</span><span>Next.js</span><span>React Native</span><span>Flutter</span><span>TypeScript</span><span>Vue.js</span><span>Redux Toolkit</span><span>RTK Query</span><span>Tailwind CSS</span><span>Shadcn/UI</span><span>Zod</span></div>
+        </div>
+        <div class="skill-group">
+          <h4>Bases de données</h4>
+          <div class="tags"><span>PostgreSQL</span><span>MySQL</span><span>SQLite</span><span>Redis</span><span>Modélisation</span></div>
+        </div>
+        <div class="skill-group">
+          <h4>DevOps &amp; outils</h4>
+          <div class="tags"><span>Git</span><span>GitHub</span><span>GitHub Actions</span><span>Docker</span><span>Docker Compose</span><span>Railway</span><span>Vercel</span><span>Nginx</span><span>Composer</span><span>Postman</span><span>Linux</span></div>
+        </div>
+        <div class="skill-group">
+          <h4>Conception</h4>
+          <div class="tags"><span>UML</span><span>Modelio</span><span>Architecture web &amp; mobile</span><span>API REST</span></div>
+        </div>
+        <div class="skill-group">
+          <h4>Langages</h4>
+          <div class="tags"><span>PHP</span><span>Python</span><span>JavaScript</span><span>TypeScript</span><span>Java</span><span>Dart</span><span>SQL</span><span>HTML5/CSS3</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMATION -->
+  <section id="formation" class="section">
+    <div class="wrap">
+      <p class="eyebrow">Formation</p>
+
+      <article class="timeline-item">
+        <div class="timeline-date">2022 — 2026</div>
+        <div class="timeline-content">
+          <h3>Licence en Informatique des Organisations</h3>
+          <p class="timeline-org">IFNTI — Institut de Formation aux Normes et Technologies de l'Informatique — Sokodé, Togo</p>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-date">2019 — 2022</div>
+        <div class="timeline-content">
+          <h3>FACEG — Gestion des ressources humaines</h3>
+          <p class="timeline-org">Université de Kara — Kara, Togo</p>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-date">2019</div>
+        <div class="timeline-content">
+          <h3>Baccalauréat — Série D</h3>
+          <p class="timeline-org">Sokodé, Togo</p>
+        </div>
+      </article>
+
+      <div class="langues">
+        <div>
+          <h4>Langues</h4>
+          <p>Français <span class="dim">— courant</span> &nbsp;·&nbsp; Anglais <span class="dim">— débutant</span></p>
+        </div>
+        <div>
+          <h4>Centres d'intérêt</h4>
+          <p>Football, musique, jeux vidéo (eFootball)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="wrap contact-inner">
+      <p class="eyebrow">Contact</p>
+      <h2>Discutons de votre prochain projet</h2>
+      <p class="contact-lede">Disponible pour un stage, une mission freelance ou pour rejoindre une équipe technique.</p>
+      <div class="contact-links">
+        <a href="mailto:francoistoyi4@gmail.com">francoistoyi4@gmail.com</a>
+        <a href="tel:+22893516499">+228 93 51 64 99</a>
+        <a href="https://github.com/frannoi12" target="_blank" rel="noopener">github.com/frannoi12</a>
+        <a href="https://linkedin.com/in/francois-toyi-474601289" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="assets/CV-Francois-Toyi.pdf" download>Télécharger le CV (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>François Toyi — Développeur Full-Stack / Backend</span>
+    <span>Sokodé, Togo</span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('avatar-img').addEventListener('error', function () {
+    this.style.display = 'none';
+    document.getElementById('avatar-fallback').style.display = 'flex';
+  });
+
+  /* ---- Thème clair / sombre ----
+     Le CSS définit déjà un thème clair par défaut ; ce script ne fait
+     qu'ajuster l'attribut data-theme. S'il échoue, le site reste
+     simplement en thème clair, jamais vide. */
+  try {
+    var root = document.documentElement;
+    var toggle = document.getElementById('theme-toggle');
+    var stored = localStorage.getItem('theme');
+    var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var initial = stored || (prefersDark ? 'dark' : 'light');
+    root.setAttribute('data-theme', initial);
+
+    toggle.addEventListener('click', function () {
+      var current = root.getAttribute('data-theme');
+      var next = current === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+  } catch (e) {
+    /* pas de JS ou erreur : le thème clair par défaut du CSS s'applique */
+  }
+</script>
+
+</body>
+</html>
