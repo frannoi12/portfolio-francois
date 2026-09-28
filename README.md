@@ -37,6 +37,7 @@ aucun serveur requis.
 | `style.css` | Couleurs, typographie, mise en page, thème clair/sombre |
 | `assets/photo.jpg` | Photo de profil affichée dans le rond en haut de page |
 | `assets/CV-Francois-Toyi.pdf` | CV téléchargeable depuis deux endroits de la page |
+| `assets/favicon.ico`, `favicon-*.png` | Icône de l'onglet du navigateur (tirée de `photo.jpg`) |
 
 ### Changer la photo
 
@@ -44,6 +45,22 @@ Placez la nouvelle image dans `assets/` **sous le nom exact `photo.jpg`**
 (format JPEG). Si votre fichier est dans un autre format, changez l'extension
 dans `index.html`, ligne `<img src="assets/photo.jpg" ...>`. Si l'image est
 absente ou illisible, un fallback avec vos initiales s'affiche à la place.
+
+Puis régénérez l'icône d'onglet avec ImageMagick :
+
+```bash
+cd assets
+convert -resize 512x512^ -gravity north -extent 512x512 photo.jpg favicon-256.png
+convert -resize 32x32 favicon-256.png favicon-32.png
+convert -resize 16x16 favicon-256.png favicon-16.png
+convert -resize 180x180 favicon-256.png favicon-180.png
+convert favicon-256.png favicon.ico
+```
+
+Le recadrage `-gravity north` reprend exactement ce que fait l'avatar du site
+(`.avatar img { object-position: center top }`), donc l'icône et la photo
+montrent la même partie de l'image. Si l'icône te paraît mal cadrée, joue sur
+`-gravity center` ou remplace `north` par `northwest`.
 
 ### Mettre à jour le CV
 
